@@ -1,0 +1,246 @@
+body {
+    background-color: #1d1f26;
+   
+}
+
+html {
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+    width: fit-content;
+    
+}
+input:focus {
+  outline: none;
+}
+
+input {
+  width: 200px;
+}
+
+.button-1 {
+  color: #ffffff;
+  background-color: #66fcf1;
+  border: 0;
+  height: 23px;
+  border-radius: 5px;
+}
+
+.button-1:hover {
+  cursor: pointer;
+  background-color: #45a293;
+}
+
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #66fcf1;
+    overflow: auto;
+    border-bottom: 2px solid white;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.9;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #45a293;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #45a293;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+/* banner styling */
+  
+.banner {
+    max-width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rem;
+    background: url(./images/banner-img.webp) no-repeat 0;
+    background-size: cover;
+    border-bottom: 2px solid #ffffff;
+}
+
+.banner-inside-color {
+    
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    flex-grow: 1;
+    background-color: #1d1f26;
+    opacity: 0.9;
+  
+    
+}
+
+.banner-inside-color h1 {
+    margin: 0 auto;
+    color: #66fcf1;
+    font-family: 'Tapestry', cursive, Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    opacity: 1;
+}
+
+
+/*newsletter styling*/
+
+.newsletter {
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.newsletter .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter .container form {
+  padding: 1rem;
+  border: 0;
+}
+
+.difficulties {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem; 
+  padding-bottom: 10rem;
+
+}
+
+.difficulties .box {
+  background-color: #66fcf1;
+  color: #1d1f26;
+  text-align: center;
+  
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 1rem;
+  max-width: 29%;
+  max-height: auto;
+  border: 2px solid #ffffff;
+  line-height: 1.7;
+
+}
+
+
+.difficulties .box p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+.coffee-morning {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid #ffffff;
+  
+  
+}
+
+ .coffee-morning .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  max-width: 100%;
+  padding: 3rem;
+  background-color: #1d1f26;
+  color: #ffffff;
+  
+
+}
+
+.coffee-morning .container h2 {
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.coffee-morning .container p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/* media queries  */
+
+@media only screen and (max-width: 1052px) {
+  
+  html {
+    line-height: 1;
+  }
+  .difficulties {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+    
+  }
+
+  .difficulties .box {
+    max-width: 75%;
+    min-height: 350px;
+    margin-top: 1rem;
+  }
+
+
+  .coffee-morning  .container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+.banner-inside-color h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.newsletter .container h2 {
+  font-size: 1.5rem;
+}
+
+.newsletter .container {
+ width: 50%;
+ flex-direction: column;
+ margin: auto;
+ text-align: center;
+}
+
+.coffee-morning .container p {
+  font-size: 1.3rem;
+}
+
+img {
+  height: 170px;
+  width: 220px;
+}
+
+}
+
